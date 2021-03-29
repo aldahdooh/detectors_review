@@ -1,1 +1,5 @@
 theme: jekyll-theme-leap-day
+title: "Benchmark: Adversarial Examples (AEs) Detection"
+description: "It is a landing page for adversarial examples detection benchmark."
+show_downloads: false
+url: "https://aldahdooh.github.io/detectors_review"
