@@ -87,5 +87,5 @@ DL has shown great success in many human-related tasks, which has led to its ado
   </tbody>
 </table>
 
+# Results, MNIST::White-box
 ## Results, MNIST::White-box
-### Results, MNIST::White-box
