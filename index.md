@@ -68,4 +68,21 @@ DL has shown great success in many human-related tasks, which has led to its ado
   </tbody>
 </table>
 
+
 ### Attacks
+<table border="0">
+  <tbody>
+    <tr>
+      <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+      <td><strong>Attack</strong></td>
+    </tr>
+    <tr>
+      <td><strong>White-box</strong></td>
+      <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td>
+    </tr>
+    <tr>
+      <td><strong>Black-box</strong></td>
+      <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td>
+    </tr>
+  </tbody>
+</table>
