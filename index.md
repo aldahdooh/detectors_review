@@ -34,7 +34,7 @@ DL has shown great success in many human-related tasks, which has led to its ado
       <td><strong>MNIST(98.73)</strong></td>
       <td>2 (CONV(32, 3x3)+ReLU) + MaxPool,<br>
           2 (CONV(64, 3x3)+ReLU) + MaxPool,<br>
-          Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU<br>
+          Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,<br>
           Dense(10) + Softmax
       </td>
     </tr>
@@ -51,7 +51,7 @@ DL has shown great success in many human-related tasks, which has led to its ado
     <tr>
       <td><strong>SVHN (94.98)</strong></td>
       <td>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,<br>
-        Dense (512) + ReLU + Dropout (0.3), Dense (128) + ReLU,&nbsp;<br>
+        Dense (512) + ReLU + Dropout (0.3), Dense (128) + ReLU,<br>
         Dense(10) + Softmax
       </td>
     </tr>
