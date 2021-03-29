@@ -88,21 +88,21 @@ DL has shown great success in many human-related tasks, which has led to its ado
 </table>
 
 # Results, MNIST
-## Results, White-box
-## Results, Black-box
-## Results, Gray-box
+### Results, White-box
+### Results, Black-box
+### Results, Gray-box
 
 # Results, CIFAR-10
-## Results, White-box
-## Results, Black-box
-## Results, Gray-box
+### Results, White-box
+### Results, Black-box
+### Results, Gray-box
 
 # Results, SVHN
-## Results, White-box
-## Results, Black-box
-## Results, Gray-box
+### Results, White-box
+### Results, Black-box
+### Results, Gray-box
 
 # Results, Tiny-ImageNet
-## Results, White-box
-## Results, Black-box
-## Results, Gray-box
+### Results, White-box
+### Results, Black-box
+### Results, Gray-box
