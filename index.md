@@ -17,5 +17,5 @@
 </p>
 
 ### Paper
-[Preprint](https://arxiv.org/abs/2103.05354)
+[Preprint](X)
 
