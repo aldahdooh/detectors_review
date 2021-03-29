@@ -31,7 +31,7 @@ DL has shown great success in many human-related tasks, which has led to its ado
       <td><strong>CNN Model</strong></td>
     </tr>
     <tr>
-      <td><strong>MNIST</strong></td>
+      <td><strong>MNIST(98.73)</strong></td>
       <td>
         <p>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,</p>
         <p>Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,&nbsp;</p>
@@ -39,7 +39,7 @@ DL has shown great success in many human-related tasks, which has led to its ado
       </td>
     </tr>
     <tr>
-      <td><strong>CIFAR-10</strong></td>
+      <td><strong>CIFAR-10 (89.11)</strong></td>
        <td>
          <p>2(Conv(64, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.1),</p>
          <p>2(Conv(128, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.2),</p>
@@ -50,7 +50,7 @@ DL has shown great success in many human-related tasks, which has led to its ado
       </td>
     </tr>
     <tr>
-      <td><strong>SVHN</strong></td>
+      <td><strong>SVHN (94.98)</strong></td>
       <td>
         <p>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,</p>
         <p>Dense (512) + ReLU + Dropout (0.3), Dense (128) + ReLU,&nbsp;</p>
@@ -58,7 +58,7 @@ DL has shown great success in many human-related tasks, which has led to its ado
       </td>
     </tr>
     <tr>
-      <td><strong>Tiny-ImageNet</strong></td>
+      <td><strong>Tiny-ImageNet (64.48)</strong></td>
       <td>
         <div>
           <div>DenseNet201</div>
@@ -67,3 +67,5 @@ DL has shown great success in many human-related tasks, which has led to its ado
     </tr>
   </tbody>
 </table>
+
+### Attacks
