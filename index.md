@@ -108,14 +108,43 @@ DL has shown great success in many human-related tasks, which has led to its ado
 ### Results, Gray-box
 
 
-<label for="pet-select">Choose a pet:</label>
+<label for="dataset-select">Choose a dataset:</label>
 
-<select name="pets" id="pet-select">
+<select name="datasets" id="dataset-select">
     <option value="">--Please choose an option--</option>
-    <option value="dog">Dog</option>
-    <option value="cat">Cat</option>
-    <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option>
+    <option value="mnist">MNIST</option>
+    <option value="cifar10">CIFAR-10</option>
+    <option value="svhn">SVHN</option>
+    <option value="tiny">Tiny-ImageNet</option>
 </select>
+
+
+<select id="type">
+    <option value="item1">item1</option>
+    <option value="item2">item2</option>
+    <option value="item3">item3</option>
+</select>
+
+<select id="size">
+    <option value="">-- select one -- </option>
+</select>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $("#type").change(function() {
+        var val = $(this).val();
+        if (val == "item1") {
+            $("#size").html("<option value='test'>item1: test 1</option><option value='test2'>item1: test 2</option>");
+        } else if (val == "item2") {
+            $("#size").html("<option value='test'>item2: test 1</option><option value='test2'>item2: test 2</option>");
+
+        } else if (val == "item3") {
+            $("#size").html("<option value='test'>item3: test 1</option><option value='test2'>item3: test 2</option>");
+            }
+        });
+    });
+</script>
