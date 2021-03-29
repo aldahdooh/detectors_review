@@ -32,27 +32,25 @@ DL has shown great success in many human-related tasks, which has led to its ado
     </tr>
     <tr>
       <td><strong>MNIST(98.73)</strong></td>
-      <td>
-        <p>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,<br>
-        Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,&nbsp;<br>
-        Dense(10) + Softmax</p>
+      <td>2 (CONV(32, 3x3)+ReLU) + MaxPool,<br>
+          2 (CONV(64, 3x3)+ReLU) + MaxPool,<br>
+          Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,&nbsp;<br>
+          Dense(10) + Softmax
       </td>
     </tr>
     <tr>
       <td><strong>CIFAR-10 (89.11)</strong></td>
-       <td>
-         <p>2(Conv(64, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.1),<br>
+       <td>2(Conv(64, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.1),<br>
          2(Conv(128, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.2),<br>
          2(Conv(256, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.3),<br>
          Conv(512, 3x3) + BatchNorm + ReLU + MaxPool + Dropout(0.4),<br>
          Dense (512) ,<br>
-         Dense(10) + Softmax</p>
+         Dense(10) + Softmax
       </td>
     </tr>
     <tr>
       <td><strong>SVHN (94.98)</strong></td>
-      <td>
-        <p>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,<br>
+      <td>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,<br>
         Dense (512) + ReLU + Dropout (0.3), Dense (128) + ReLU,&nbsp;<br>
         Dense(10) + Softmax</p>
       </td>
