@@ -27,10 +27,43 @@ DL has shown great success in many human-related tasks, which has led to its ado
 <table border="0">
   <tbody>
     <tr>
-      <td>MNIST</td>
-      <td>CIFAR-10</td>
-      <td>SVHN</td>
-      <td>Tiny-ImageNet</td>
+      <td><strong>Dataset</strong></td>
+      <td><strong>CNN Model</strong></td>
+    </tr>
+    <tr>
+      <td><strong>MNIST</strong></td>
+      <td>
+        <p>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,</p>
+        <p>Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,&nbsp;</p>
+        <p>Dense(10) + Softmax</p>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>CIFAR-10</strong></td>
+       <td>
+         <p>2(Conv(64, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.1),</p>
+         <p>2(Conv(128, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.2),</p>
+         <p>2(Conv(256, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.3),</p>
+         <p>Conv(512, 3x3) + BatchNorm + ReLU + MaxPool + Dropout(0.4),</p>
+         <p>Dense (512) ,</p>
+         <p>Dense(10) + Softmax</p>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>SVHN</strong></td>
+      <td>
+        <p>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,</p>
+        <p>Dense (512) + ReLU + Dropout (0.3), Dense (128) + ReLU,&nbsp;</p>
+        <p>Dense(10) + Softmax</p>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Tiny-ImageNet</strong></td>
+      <td>
+        <div>
+          <div>DenseNet201</div>
+        </div>
+      </td>
     </tr>
   </tbody>
 </table>
