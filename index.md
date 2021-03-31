@@ -2,9 +2,8 @@
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-
-<script src="{{site.url}}/js/paging.js"></script>
-<link rel="stylesheet" href="{{site.url}}/css/demo.css" />
+<script src="https://aldahdooh.github.io/detectors_review/js/paging.js"></script>
+<link rel="stylesheet" href="https://aldahdooh.github.io/detectors_review/css/demo.css" />
 
 # The benchmark
 The aim of this benchmark is to have a framework that is able to test the performance of the adversarial examples detection methods under the same attack scenarios. This will help researchers to follow-up the up-to-date progress on the domain. Here, we start with the results published in the review paper; "Adversarial Example Detection for DNN Models: A Review" ([Link](X)). 
