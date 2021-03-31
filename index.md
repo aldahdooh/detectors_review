@@ -293,25 +293,28 @@ We are welcoming your contribution to enrich this benchmark either by adding new
   </tbody>
 </table>
 
-$(document).ready(function(){
-    $('#mnist').after('<div id="nav"></div>');
-    var rowsShown = 4;
-    var rowsTotal = $('#data tbody tr').length;
-    var numPages = rowsTotal/rowsShown;
-    for(i = 0;i < numPages;i++) {
-        var pageNum = i + 1;
-        $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
-    }
-    $('#mnist tbody tr').hide();
-    $('#mnist tbody tr').slice(0, rowsShown).show();
-    $('#nav a:first').addClass('active');
-    $('#nav a').bind('click', function(){
-        $('#nav a').removeClass('active');
-        $(this).addClass('active');
-        var currPage = $(this).attr('rel');
-        var startItem = currPage * rowsShown;
-        var endItem = startItem + rowsShown;
-        $('#data tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
-        css('display','table-row').animate({opacity:1}, 300);
-    });
-});
+
+<script>
+  $(document).ready(function(){
+      $('#mnist').after('<div id="nav"></div>');
+      var rowsShown = 5;
+      var rowsTotal = $('#mnist tbody tr').length;
+      var numPages = rowsTotal/rowsShown;
+      for(i = 0;i < numPages;i++) {
+          var pageNum = i + 1;
+          $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
+      }
+      $('#mnist tbody tr').hide();
+      $('#mnist tbody tr').slice(0, rowsShown).show();
+      $('#nav a:first').addClass('active');
+      $('#nav a').bind('click', function(){
+          $('#nav a').removeClass('active');
+          $(this).addClass('active');
+          var currPage = $(this).attr('rel');
+          var startItem = currPage * rowsShown;
+          var endItem = startItem + rowsShown;
+          $('#mnist tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+          css('display','table-row').animate({opacity:1}, 300);
+      });
+  });                           
+</script>
