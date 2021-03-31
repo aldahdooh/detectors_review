@@ -130,6 +130,8 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
 <script>
   $(document).ready(function() {
     $("#attacks-select").change(function() {
@@ -239,3 +241,77 @@ We are welcoming your contribution to enrich this benchmark either by adding new
     });
   });
 </script>
+
+
+<table id='mnist' class='sortable' border='1'>
+  <tbody>
+    <tr>
+      <th style="text-align: center;">Detector</th>
+      <th style="text-align: center;">Model 1 &ndash; DR</th>
+      <th style="text-align: center;">Model 1 &ndash; FPR</th>
+    </tr>
+    <tr>
+      <td style="text-align: center;">KD+BU</td>
+      <td style="text-align: center;">85.54</td>
+      <td style="text-align: center;">3.46</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">LID</td>
+      <td style="text-align: center;">81.66</td>
+      <td style="text-align: center;">1.41</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">NSS</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">FS</td>
+      <td style="text-align: center;">97.8</td>
+      <td style="text-align: center;">5.27</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">MagNet</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">0.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">DNR</td>
+      <td style="text-align: center;">59.28</td>
+      <td style="text-align: center;">10.01</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">SFAD</td>
+      <td style="text-align: center;">97.76</td>
+      <td style="text-align: center;">10.79</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">NIC</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">10.12</td>
+    </tr>
+  </tbody>
+</table>
+
+$(document).ready(function(){
+    $('#mnist').after('<div id="nav"></div>');
+    var rowsShown = 4;
+    var rowsTotal = $('#data tbody tr').length;
+    var numPages = rowsTotal/rowsShown;
+    for(i = 0;i < numPages;i++) {
+        var pageNum = i + 1;
+        $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
+    }
+    $('#mnist tbody tr').hide();
+    $('#mnist tbody tr').slice(0, rowsShown).show();
+    $('#nav a:first').addClass('active');
+    $('#nav a').bind('click', function(){
+        $('#nav a').removeClass('active');
+        $(this).addClass('active');
+        var currPage = $(this).attr('rel');
+        var startItem = currPage * rowsShown;
+        var endItem = startItem + rowsShown;
+        $('#data tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+        css('display','table-row').animate({opacity:1}, 300);
+    });
+});
