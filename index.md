@@ -133,7 +133,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <p><strong>MNIST</strong></p>
-<table id='minst' class="tablemanager" border='1'>
+<table class="tablemanager">
 <thead>
 <tr>
 <th>Detector</th>
