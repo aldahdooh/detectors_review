@@ -1,4 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2jquery.min.js"></script>
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
@@ -137,7 +137,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <p><strong>MNIST</strong></p>
-<table id='minst' class="table table-bordered table-striped" border='1'>
+<table id='minst' class="sortable table-striped" border='1'>
 <tbody>
 <tr>
 <th>Detector</th>
@@ -189,7 +189,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 
 <script>
   $(document).ready(function() {
-    $('#mnist').paging({limit:5});
+    $("#mnist").paging({limit:5});
   });
 </script>
 
