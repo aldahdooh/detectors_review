@@ -134,12 +134,15 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <p><strong>MNIST</strong></p>
-<table id="" class="display" style="width:100%">
+<table id='' class='display' style='width:100%'>
 <thead>
 <tr>
-<th>Detector</th>
-<th>Model 1 &ndash; DR</th>
-<th>Model 1 &ndash; FPR</th>
+<th rowspan='2'>Detector</th>
+<th colspan='2'>Model 1</th>
+</tr>
+<tr>
+<th>DR</th>
+<th>FPR</th>
 </tr>
 </thead>
 <tbody>
