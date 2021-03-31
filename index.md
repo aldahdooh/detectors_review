@@ -239,7 +239,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
       else if (val == "sta") {
         $("#tables").html("");
       }
+  <script> $(document).ready(function() { $('table.display').DataTable(); } ); </script>
     });
   });
 </script>
-<script> $(document).ready(function() { $('table.display').DataTable(); } ); </script>
