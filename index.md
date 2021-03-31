@@ -87,9 +87,9 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 
 # Results
 
-<label for="dataset-select">Choose a dataset:</label>
+<label for="attacks-select">Select an attack:</label>
 
-<select name="datasets" id="dataset-select">
+<select name="attacks" id="attacks-select">
   <option value="">--Please choose an option--</option>
   <option value="fgsm1">FGSM(8)</option>
   <option value="fgsm2">FGSM(16)</option>
@@ -127,6 +127,9 @@ We are welcoming your contribution to enrich this benchmark either by adding new
   <option value="sta">SpatialTransformationAttack</option>
 </select>
 
+<div id="tables"> 
+</div>
+
 
 <select id="type">
     <option value="item1">item1</option>
@@ -143,17 +146,113 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
+    $("#attacks").change(function() {
+      var val = $(this).val();
+      if (val == "fgsm1") {
+        $("#tables").html(" <table border="0">
+                                <tbody>
+                                  <tr>
+                                    <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                    <td><strong>Attack</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>White-box</strong></td>
+                                    <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>Black-box</strong></td>
+                                    <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td>
+                                  </tr>
+                                </tbody>
+                              </table>
 
-    $("#type").change(function() {
-        var val = $(this).val();
-        if (val == "item1") {
-            $("#size").html("<option value='test'>item1: test 1</option><option value='test2'>item1: test 2</option>");
-        } else if (val == "item2") {
-            $("#size").html("<option value='test'>item2: test 1</option><option value='test2'>item2: test 2</option>");
+                              <table border="0">
+                                <tbody>
+                                  <tr>
+                                    <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                    <td><strong>Attack</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>White-box</strong></td>
+                                    <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>Black-box</strong></td>
+                                    <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td>
+                                  </tr>
+                                </tbody>
+                              </table>");
+      } 
+      else if (val == "fgsm2") {
+        $("#tables").html(" <table border="0">
+                                <tbody>
+                                  <tr>
+                                    <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                    <td><strong>Attack</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>White-box</strong></td>
+                                    <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>Black-box</strong></td>
+                                    <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td>
+                                  </tr>
+                                </tbody>
+                              </table>
 
-        } else if (val == "item3") {
-            $("#size").html("<option value='test'>item3: test 1</option><option value='test2'>item3: test 2</option>");
-            }
-        });
+                              <table border="0">
+                                <tbody>
+                                  <tr>
+                                    <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                    <td><strong>Attack</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>White-box</strong></td>
+                                    <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>Black-box</strong></td>
+                                    <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td>
+                                  </tr>
+                                </tbody>
+                              </table>");
+      } 
+      else if (val == "fgsm3") {
+        $("#tables").html(" <table border="0">
+                              <tbody>
+                                <tr>
+                                  <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                  <td><strong>Attack</strong></td>
+                                </tr>
+                                <tr>
+                                  <td><strong>White-box</strong></td>
+                                  <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Black-box</strong></td>
+                                  <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table border="0">
+                              <tbody>
+                                <tr>
+                                  <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                  <td><strong>Attack</strong></td>
+                                </tr>
+                                <tr>
+                                  <td><strong>White-box</strong></td>
+                                  <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Black-box</strong></td>
+                                  <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td>
+                                </tr>
+                              </tbody>
+                           </table>");
+      }
     });
+  });
 </script>
