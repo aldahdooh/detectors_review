@@ -135,13 +135,106 @@ We are welcoming your contribution to enrich this benchmark either by adding new
     $("#attacks-select").change(function() {
       var val = $(this).val();
       if (val == "fgsm1") {
-        $("#tables").html("<table border='1'> <tbody> <tr> <td><strong>1 Scenario (Zero Knowledge of the detector)</strong></td> <td><strong>Attack</strong></td> </tr> <tr> <td><strong>White-box</strong></td> <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td> </tr> <tr> <td><strong>Black-box</strong></td> <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td> </tr> </tbody> </table> <table border='1'> <tbody> <tr> <td><strong>Scenario (Zero Knowledge of the detector)</strong></td> <td><strong>Attack</strong></td> </tr> <tr> <td><strong>White-box</strong></td> <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td> </tr> <tr> <td><strong>Black-box</strong></td> <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td> </tr> </tbody> </table>");
+        $("#tables").html("");
       } 
       else if (val == "fgsm2") {
-        $("#tables").html("<table border='1'> <tbody> <tr> <td><strong>2 Scenario (Zero Knowledge of the detector)</strong></td> <td><strong>Attack</strong></td> </tr> <tr> <td><strong>White-box</strong></td> <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td> </tr> <tr> <td><strong>Black-box</strong></td> <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td> </tr> </tbody> </table> <table border='1'> <tbody> <tr> <td><strong>Scenario (Zero Knowledge of the detector)</strong></td> <td><strong>Attack</strong></td> </tr> <tr> <td><strong>White-box</strong></td> <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td> </tr> <tr> <td><strong>Black-box</strong></td> <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td> </tr> </tbody> </table>");
+        $("#tables").html("");
       } 
       else if (val == "fgsm3") {
-        $("#tables").html("<table border='1'> <tbody> <tr> <td><strong>3 Scenario (Zero Knowledge of the detector)</strong></td> <td><strong>Attack</strong></td> </tr> <tr> <td><strong>White-box</strong></td> <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td> </tr> <tr> <td><strong>Black-box</strong></td> <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td> </tr> </tbody> </table> <table border='1'> <tbody> <tr> <td><strong>Scenario (Zero Knowledge of the detector)</strong></td> <td><strong>Attack</strong></td> </tr> <tr> <td><strong>White-box</strong></td> <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td> </tr> <tr> <td><strong>Black-box</strong></td> <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td> </tr> </tbody> </table>");
+        $("#tables").html("");
+      }
+      else if (val == "fgsm4") {
+        $("#tables").html("");
+      }
+      else if (val == "fgsm5") {
+        $("#tables").html("");
+      }
+      else if (val == "bim1") {
+        $("#tables").html("");
+      }
+      else if (val == "bim2") {
+        $("#tables").html("");
+      }
+      else if (val == "bim3") {
+        $("#tables").html("");
+      }
+      else if (val == "bim4") {
+        $("#tables").html("");
+      }
+      else if (val == "bim5") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd11") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd12") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd13") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd14") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd15") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd21") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd22") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd23") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd24") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd25") {
+        $("#tables").html("");
+      }
+      else if (val == "pgd26") {
+        $("#tables").html("");
+      }
+      else if (val == "pgdi1") {
+        $("#tables").html("");
+      }
+      else if (val == "pgdi2") {
+        $("#tables").html("");
+      }
+      else if (val == "pgdi3") {
+        $("#tables").html("");
+      }
+      else if (val == "pgdi4") {
+        $("#tables").html("");
+      }
+      else if (val == "cwi") {
+        $("#tables").html("");
+      }
+      else if (val == "hca1") {
+        $("#tables").html("");
+      }
+      else if (val == "hca2") {
+        $("#tables").html("");
+      }
+      else if (val == "hca3") {
+        $("#tables").html("");
+      }
+      else if (val == "hca4") {
+        $("#tables").html("");
+      }
+      else if (val == "df") {
+        $("#tables").html("");
+      }
+      else if (val == "sq") {
+        $("#tables").html("");
+      }
+      else if (val == "hop") {
+        $("#tables").html("");
+      }
+      else if (val == "sta") {
+        $("#tables").html("");
       }
     });
   });
