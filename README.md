@@ -16,7 +16,8 @@ Publicly available codes for the detectors that are use in this work are customi
 ### Requirement
 1. Tested on Python 3.8
 2. Keras 2.3.1
-3. thundersvm for GPU-based SVM. [Link](https://thundersvm.readthedocs.io/en/latest/)
+3. Tensorflow 2.2
+4. thundersvm for GPU-based SVM. [Link](https://thundersvm.readthedocs.io/en/latest/)
 
 ### setup_paths
 Open `setup_paths.py` and set the paths and other detector-related settings.
