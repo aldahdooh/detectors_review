@@ -134,7 +134,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <p><strong>MNIST</strong></p>
-<table id="mnist" class="display" style="width:100%">
+<table id="" class="display" style="width:100%">
 <thead>
 <tr>
 <th>Detector</th>
@@ -188,7 +188,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 
 <script>
   $(document).ready(function() {
-      $('#mnist').DataTable();
+      $('table.display').DataTable();
   } );
 </script>  
 
