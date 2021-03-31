@@ -1,6 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-<link type="text/css" rel="stylesheet" href="./stylesheets/main.css" />
+<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
 
 # The benchmark
 The aim of this benchmark is to have a framework that is able to test the performance of the adversarial examples detection methods under the same attack scenarios. This will help researchers to follow-up the up-to-date progress on the domain. Here, we start with the results published in the review paper; "Adversarial Example Detection for DNN Models: A Review" ([Link](X)). 
