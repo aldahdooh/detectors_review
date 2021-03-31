@@ -89,43 +89,46 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 
 <label for="attacks-select">Select an attack:</label>
 <select name="attacks" id="attacks-select">
-  <option value="">--Please choose an option--</option>
-  <option value="g1" class="optionGroup">White-box</option>
-  <option value="fgsm1">FGSM(8)</option>
-  <option value="fgsm2">FGSM(16)</option>
-  <option value="fgsm3">FGSM(32)</option>
-  <option value="fgsm4">FGSM(64)</option>
-  <option value="fgsm5">FGSM(80)</option>
-  <option value="bim1">BIM(8)</option>
-  <option value="bim2">BIM(16)</option>
-  <option value="bim3">BIM(32)</option>
-  <option value="bim4">BIM(64)</option>
-  <option value="bim5">BIM(80)</option>
-  <option value="pgd11">PGD-L1(5)</option>
-  <option value="pgd12">PGD-L1(10)</option>
-  <option value="pgd13">PGD-L1(15)</option>
-  <option value="pgd14">PGD-L1(20)</option>
-  <option value="pgd15">PGD-L1(25)</option>
-  <option value="pgd21">PGD-L2(0.25)</option>
-  <option value="pgd22">PGD-L2(0.3125)</option>
-  <option value="pgd23">PGD-L2(0.5)</option>
-  <option value="pgd24">PGD-L2(1.0)</option>
-  <option value="pgd25">PGD-L2(1.5)</option>
-  <option value="pgd26">PGD-L2(2.0)</option>
-  <option value="pgdi1">PGD-Linf(8)</option>
-  <option value="pgdi2">PGD-Linf(16)</option>
-  <option value="pgdi3">PGD-Linf(32)</option>
-  <option value="pgdi4">PGD-Linf(64)</option>
-  <option value="cwi">CW-Linf</option>
-  <option value="hca1">CW-HCA(8)</option>
-  <option value="hca2">CW-HCA(16)</option>
-  <option value="hca3">CW-HCA(80)</option>
-  <option value="hca4">CW-HCA(128)</option>
-  <option value="df">DeepFool</option>
-  <option value="g2" class="optionGroup">Black-box</option>
-  <option value="sa">SquareAttack</option>
-  <option value="hop">HopSkipJumpAttack</option>
-  <option value="sta">SpatialTransformationAttack</option>
+  <optgroup label="White-box Attacks">
+    <option value="g1" class="optionGroup">White-box</option>
+    <option value="fgsm1">FGSM(8)</option>
+    <option value="fgsm2">FGSM(16)</option>
+    <option value="fgsm3">FGSM(32)</option>
+    <option value="fgsm4">FGSM(64)</option>
+    <option value="fgsm5">FGSM(80)</option>
+    <option value="bim1">BIM(8)</option>
+    <option value="bim2">BIM(16)</option>
+    <option value="bim3">BIM(32)</option>
+    <option value="bim4">BIM(64)</option>
+    <option value="bim5">BIM(80)</option>
+    <option value="pgd11">PGD-L1(5)</option>
+    <option value="pgd12">PGD-L1(10)</option>
+    <option value="pgd13">PGD-L1(15)</option>
+    <option value="pgd14">PGD-L1(20)</option>
+    <option value="pgd15">PGD-L1(25)</option>
+    <option value="pgd21">PGD-L2(0.25)</option>
+    <option value="pgd22">PGD-L2(0.3125)</option>
+    <option value="pgd23">PGD-L2(0.5)</option>
+    <option value="pgd24">PGD-L2(1.0)</option>
+    <option value="pgd25">PGD-L2(1.5)</option>
+    <option value="pgd26">PGD-L2(2.0)</option>
+    <option value="pgdi1">PGD-Linf(8)</option>
+    <option value="pgdi2">PGD-Linf(16)</option>
+    <option value="pgdi3">PGD-Linf(32)</option>
+    <option value="pgdi4">PGD-Linf(64)</option>
+    <option value="cwi">CW-Linf</option>
+    <option value="hca1">CW-HCA(8)</option>
+    <option value="hca2">CW-HCA(16)</option>
+    <option value="hca3">CW-HCA(80)</option>
+    <option value="hca4">CW-HCA(128)</option>
+    <option value="df">DeepFool</option>
+  </optgroup>
+  <optgroup label="Black-box Attacks">
+    <option value="g2" class="optionGroup">Black-box</option>
+    <option value="sa">SquareAttack</option>
+    <option value="hop">HopSkipJumpAttack</option>
+    <option value="sta">SpatialTransformationAttack</option>
+  </optgroup>
 </select>
 
 <div id="tables">
