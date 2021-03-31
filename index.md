@@ -187,12 +187,10 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 
 <script>
 $('.tablemanager').tablemanager({
-			appendFilterby: true,
 			dateFormat: [[4,"mm-dd-yyyy"]],
 			debug: true,
 			pagination: true,
 			showrows: [5,10,20,50,100],
-			disableFilterBy: [1]
 		});
 </script>
   
