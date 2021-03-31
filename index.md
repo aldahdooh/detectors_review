@@ -186,10 +186,12 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </tbody>
 </table>
 
+<script>
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('#,mist').DataTable();
 } );
-  
+</script>  
+
 <script>
   $(document).ready(function() {
     $("#attacks-select").change(function() {
