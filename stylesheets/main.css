@@ -1,1 +1,23 @@
-X
+#mnist td 
+{
+  text-align: center; 
+  vertical-align: middle;
+}
+
+#cifar10 td 
+{
+  text-align: center; 
+  vertical-align: middle;
+}
+
+#svhn td 
+{
+  text-align: center; 
+  vertical-align: middle;
+}
+
+#tiny td 
+{
+  text-align: center; 
+  vertical-align: middle;
+}
