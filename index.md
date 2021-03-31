@@ -187,9 +187,9 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </table>
 
 <script>
-$(document).ready(function() {
-    $('#,mist').DataTable();
-} );
+  $(document).ready(function() {
+      $('#mnist').DataTable();
+  } );
 </script>  
 
 <script>
