@@ -130,19 +130,6 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 <div id="tables"> 
 </div>
 
-
-<select id="type">
-    <option value="item1">item1</option>
-    <option value="item2">item2</option>
-    <option value="item3">item3</option>
-</select>
-
-<select id="size">
-    <option value="">-- select one -- </option>
-</select>
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
