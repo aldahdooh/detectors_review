@@ -1,3 +1,7 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
+
 # The benchmark
 The aim of this benchmark is to have a framework that is able to test the performance of the adversarial examples detection methods under the same attack scenarios. This will help researchers to follow-up the up-to-date progress on the domain. Here, we start with the results published in the review paper; "Adversarial Example Detection for DNN Models: A Review" ([Link](X)). 
 
@@ -129,58 +133,56 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <p><strong>MNIST</strong></p>
-<table id='mnist' class='sortable' border='0'>
-  <tbody>
-    <tr>
-      <th style="text-align: center;">Detector</th>
-      <th style="text-align: center;">Model 1 &ndash; DR</th>
-      <th style="text-align: center;">Model 1 &ndash; FPR</th>
-    </tr>
-    <tr>
-      <td style="text-align: center;">KD+BU</td>
-      <td style="text-align: center;">85.54</td>
-      <td style="text-align: center;">3.46</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">LID</td>
-      <td style="text-align: center;">81.66</td>
-      <td style="text-align: center;">1.41</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">NSS</td>
-      <td style="text-align: center;">100</td>
-      <td style="text-align: center;">0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">FS</td>
-      <td style="text-align: center;">97.8</td>
-      <td style="text-align: center;">5.27</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">MagNet</td>
-      <td style="text-align: center;">100</td>
-      <td style="text-align: center;">0.2</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">DNR</td>
-      <td style="text-align: center;">59.28</td>
-      <td style="text-align: center;">10.01</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">SFAD</td>
-      <td style="text-align: center;">97.76</td>
-      <td style="text-align: center;">10.79</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">NIC</td>
-      <td style="text-align: center;">100</td>
-      <td style="text-align: center;">10.12</td>
-    </tr>
-  </tbody>
+<table id='minst' class='sorttable' border='1'>
+<tbody>
+<tr>
+<th>Detector</th>
+<th>Model 1 &ndash; DR</th>
+<th>Model 1 &ndash; FPR</th>
+</tr>
+<tr>
+<td>KD+BU</td>
+<td>85.54</td>
+<td>3.46</td>
+</tr>
+<tr>
+<td>LID</td>
+<td>81.66</td>
+<td>1.41</td>
+</tr>
+<tr>
+<td>NSS</td>
+<td>100</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FS</td>
+<td>97.8</td>
+<td>5.27</td>
+</tr>
+<tr>
+<td>MagNet</td>
+<td>100</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>DNR</td>
+<td>59.28</td>
+<td>10.01</td>
+</tr>
+<tr>
+<td>SFAD</td>
+<td>97.76</td>
+<td>10.79</td>
+</tr>
+<tr>
+<td>NIC</td>
+<td>100</td>
+<td>10.12</td>
+</tr>
+</tbody>
 </table>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 <script>
   $(document).ready(function() {
     $("#attacks-select").change(function() {
