@@ -187,7 +187,6 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 
 <script>
 $('.tablemanager').tablemanager({
-			firstSort: [[3,0],[2,0],[1,'asc']],
 			appendFilterby: true,
 			dateFormat: [[4,"mm-dd-yyyy"]],
 			debug: true,
