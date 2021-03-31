@@ -136,10 +136,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <p><strong>MNIST</strong></p>
-<div class="rt-container">
-<div class="col-rt-12">
-<div class="Scriptcontent">
-<table id='minst' class="table-striped sortable" border='1'>
+<table id='minst' class="table-striped" border='1'>
 <tbody>
 <tr>
 <th>Detector</th>
@@ -188,9 +185,6 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
     
 <script>
   $(document).ready(function() {
