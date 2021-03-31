@@ -139,7 +139,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
     $("#attacks-select").change(function() {
       var val = $(this).val();
       if (val == "fgsm1") {
-        $("#tables").html("<p><strong>MNIST</strong></p> <table id='' class='display' style='width:100%'> <thead> <tr> <th rowspan='2'>Detector</th> <th colspan='2'>Model 1</th> </tr> <tr> <th>DR</th> <th>FPR</th> </tr> </thead> <tbody> <tr> <td>KD+BU</td> <td>85.54</td> <td>3.46</td> </tr> <tr> <td>LID</td> <td>81.66</td> <td>1.41</td> </tr> <tr> <td>NSS</td> <td>100</td> <td>0</td> </tr> <tr> <td>FS</td> <td>97.8</td> <td>5.27</td> </tr> <tr> <td>MagNet</td> <td>100</td> <td>0.2</td> </tr> <tr> <td>DNR</td> <td>59.28</td> <td>10.01</td> </tr> <tr> <td>SFAD</td> <td>97.76</td> <td>10.79</td> </tr> <tr> <td>NIC</td> <td>100</td> <td>10.12</td> </tr> </tbody> </table>");
+        $("#tables").html("<p><strong>MNIST</strong></p> <table id='' class='display compact' style='width:100%'> <thead> <tr> <th rowspan='2'>Detector</th> <th colspan='2'>Model 1</th> </tr> <tr> <th>DR</th> <th>FPR</th> </tr> </thead> <tbody> <tr> <td>KD+BU</td> <td>85.54</td> <td>3.46</td> </tr> <tr> <td>LID</td> <td>81.66</td> <td>1.41</td> </tr> <tr> <td>NSS</td> <td>100</td> <td>0</td> </tr> <tr> <td>FS</td> <td>97.8</td> <td>5.27</td> </tr> <tr> <td>MagNet</td> <td>100</td> <td>0.2</td> </tr> <tr> <td>DNR</td> <td>59.28</td> <td>10.01</td> </tr> <tr> <td>SFAD</td> <td>97.76</td> <td>10.79</td> </tr> <tr> <td>NIC</td> <td>100</td> <td>10.12</td> </tr> </tbody> </table>");
       } 
       else if (val == "fgsm2") {
         $("#tables").html("");
@@ -240,7 +240,11 @@ We are welcoming your contribution to enrich this benchmark either by adding new
       else if (val == "sta") {
         $("#tables").html("");
       }
-      $(document).ready(function() { $('table.display').DataTable(); } );
+      $(document).ready(function() {
+        $('table.display').DataTable({
+          "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
+          });
+        });
     });
   });
 </script>
