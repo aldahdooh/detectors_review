@@ -1,6 +1,7 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-<script src="https://aldahdooh.github.io/detectors_review/js/tableManager.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
 
 # The benchmark
 The aim of this benchmark is to have a framework that is able to test the performance of the adversarial examples detection methods under the same attack scenarios. This will help researchers to follow-up the up-to-date progress on the domain. Here, we start with the results published in the review paper; "Adversarial Example Detection for DNN Models: A Review" ([Link](X)). 
@@ -133,7 +134,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <p><strong>MNIST</strong></p>
-<table class="tablemanager">
+<table id="mnist" class="display" style="width:100%">
 <thead>
 <tr>
 <th>Detector</th>
@@ -185,14 +186,9 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </tbody>
 </table>
 
-<script>
-$('.tablemanager').tablemanager({
-			dateFormat: [[4,"mm-dd-yyyy"]],
-			debug: true,
-			pagination: true,
-			showrows: [5,10,20,50,100],
-		});
-</script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
   
 <script>
   $(document).ready(function() {
