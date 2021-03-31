@@ -133,7 +133,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </div>
 
 <p><strong>MNIST</strong></p>
-<table id='minst' class='sorttable' border='1'>
+<table id='minst' class='sortable' border='1'>
 <tbody>
 <tr>
 <th>Detector</th>
