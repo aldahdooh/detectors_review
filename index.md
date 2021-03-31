@@ -184,11 +184,19 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 </tr>
 </tbody>
 </table>
-    
-<script>
-  $('.tablemanager').tablemanager();
-</script>
 
+<script>
+$('.tablemanager').tablemanager({
+			firstSort: [[3,0],[2,0],[1,'asc']],
+			appendFilterby: true,
+			dateFormat: [[4,"mm-dd-yyyy"]],
+			debug: true,
+			pagination: true,
+			showrows: [5,10,20,50,100],
+			disableFilterBy: [1]
+		});
+</script>
+  
 <script>
   $(document).ready(function() {
     $("#attacks-select").change(function() {
