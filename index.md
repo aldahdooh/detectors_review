@@ -90,54 +90,109 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 <label for="attacks-select">Select an attack:</label>
 <select name="attacks" id="attacks-select">
   <option value="">--Please choose an option--</option>
-  <option value="fgsm1">FGSM(8)</option>
-  <option value="fgsm2">FGSM(16)</option>
-  <option value="fgsm3">FGSM(32)</option>
-  <option value="fgsm4">FGSM(64)</option>
-  <option value="fgsm5">FGSM(80)</option>
-  <option value="bim1">BIM(8)</option>
-  <option value="bim2">BIM(16)</option>
-  <option value="bim3">BIM(32)</option>
-  <option value="bim4">BIM(64)</option>
-  <option value="bim5">BIM(80)</option>
-  <option value="pgd11">PGD-L1(5)</option>
-  <option value="pgd12">PGD-L1(10)</option>
-  <option value="pgd13">PGD-L1(15)</option>
-  <option value="pgd14">PGD-L1(20)</option>
-  <option value="pgd15">PGD-L1(25)</option>
-  <option value="pgd21">PGD-L2(0.25)</option>
-  <option value="pgd22">PGD-L2(0.3125)</option>
-  <option value="pgd23">PGD-L2(0.5)</option>
-  <option value="pgd24">PGD-L2(1.0)</option>
-  <option value="pgd25">PGD-L2(1.5)</option>
-  <option value="pgd26">PGD-L2(2.0)</option>
-  <option value="pgdi1">PGD-Linf(8)</option>
-  <option value="pgdi2">PGD-Linf(16)</option>
-  <option value="pgdi3">PGD-Linf(32)</option>
-  <option value="pgdi4">PGD-Linf(64)</option>
-  <option value="cwi">CW-Linf</option>
-  <option value="hca1">CW-HCA(8)</option>
-  <option value="hca2">CW-HCA(16)</option>
-  <option value="hca3">CW-HCA(80)</option>
-  <option value="hca4">CW-HCA(128)</option>
-  <option value="df">DeepFool</option>
-  <option value="sa">SquareAttack</option>
-  <option value="hop">HopSkipJumpAttack</option>
-  <option value="sta">SpatialTransformationAttack</option>
+  <optgroup label="White-box">
+    <option value="fgsm1">FGSM(8)</option>
+    <option value="fgsm2">FGSM(16)</option>
+    <option value="fgsm3">FGSM(32)</option>
+    <option value="fgsm4">FGSM(64)</option>
+    <option value="fgsm5">FGSM(80)</option>
+    <option value="bim1">BIM(8)</option>
+    <option value="bim2">BIM(16)</option>
+    <option value="bim3">BIM(32)</option>
+    <option value="bim4">BIM(64)</option>
+    <option value="bim5">BIM(80)</option>
+    <option value="pgd11">PGD-L1(5)</option>
+    <option value="pgd12">PGD-L1(10)</option>
+    <option value="pgd13">PGD-L1(15)</option>
+    <option value="pgd14">PGD-L1(20)</option>
+    <option value="pgd15">PGD-L1(25)</option>
+    <option value="pgd21">PGD-L2(0.25)</option>
+    <option value="pgd22">PGD-L2(0.3125)</option>
+    <option value="pgd23">PGD-L2(0.5)</option>
+    <option value="pgd24">PGD-L2(1.0)</option>
+    <option value="pgd25">PGD-L2(1.5)</option>
+    <option value="pgd26">PGD-L2(2.0)</option>
+    <option value="pgdi1">PGD-Linf(8)</option>
+    <option value="pgdi2">PGD-Linf(16)</option>
+    <option value="pgdi3">PGD-Linf(32)</option>
+    <option value="pgdi4">PGD-Linf(64)</option>
+    <option value="cwi">CW-Linf</option>
+    <option value="hca1">CW-HCA(8)</option>
+    <option value="hca2">CW-HCA(16)</option>
+    <option value="hca3">CW-HCA(80)</option>
+    <option value="hca4">CW-HCA(128)</option>
+    <option value="df">DeepFool</option>
+  </optgroup>
+  <optgroup label="Black-box">
+    <option value="sa">SquareAttack</option>
+    <option value="hop">HopSkipJumpAttack</option>
+    <option value="sta">SpatialTransformationAttack</option>
+  </optgroup>
 </select>
 
 <div id="tables">
 </div>
 
+<p><strong>MNIST</strong></p>
+<table id='mnist' class='sortable' border='0'>
+  <tbody>
+    <tr>
+      <th style="text-align: center;">Detector</th>
+      <th style="text-align: center;">Model 1 &ndash; DR</th>
+      <th style="text-align: center;">Model 1 &ndash; FPR</th>
+    </tr>
+    <tr>
+      <td style="text-align: center;">KD+BU</td>
+      <td style="text-align: center;">85.54</td>
+      <td style="text-align: center;">3.46</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">LID</td>
+      <td style="text-align: center;">81.66</td>
+      <td style="text-align: center;">1.41</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">NSS</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">FS</td>
+      <td style="text-align: center;">97.8</td>
+      <td style="text-align: center;">5.27</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">MagNet</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">0.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">DNR</td>
+      <td style="text-align: center;">59.28</td>
+      <td style="text-align: center;">10.01</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">SFAD</td>
+      <td style="text-align: center;">97.76</td>
+      <td style="text-align: center;">10.79</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">NIC</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">10.12</td>
+    </tr>
+  </tbody>
+</table>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-
 <script>
   $(document).ready(function() {
     $("#attacks-select").change(function() {
       var val = $(this).val();
       if (val == "fgsm1") {
-        $("#tables").html("");
+        $("#tables").html("<p><strong>MNIST</strong></p><table id='mnist' class='sortable' border='0'> <tbody> <tr> <th style="text-align: center;">Detector</th> <th style="text-align: center;">Model 1 &ndash; DR</th> <th style="text-align: center;">Model 1 &ndash; FPR</th> </tr> <tr> <td style="text-align: center;">KD+BU</td> <td style="text-align: center;">85.54</td> <td style="text-align: center;">3.46</td> </tr> <tr> <td style="text-align: center;">LID</td> <td style="text-align: center;">81.66</td> <td style="text-align: center;">1.41</td> </tr> <tr> <td style="text-align: center;">NSS</td> <td style="text-align: center;">100</td> <td style="text-align: center;">0</td> </tr> <tr> <td style="text-align: center;">FS</td> <td style="text-align: center;">97.8</td> <td style="text-align: center;">5.27</td> </tr> <tr> <td style="text-align: center;">MagNet</td> <td style="text-align: center;">100</td> <td style="text-align: center;">0.2</td> </tr> <tr> <td style="text-align: center;">DNR</td> <td style="text-align: center;">59.28</td> <td style="text-align: center;">10.01</td> </tr> <tr> <td style="text-align: center;">SFAD</td> <td style="text-align: center;">97.76</td> <td style="text-align: center;">10.79</td> </tr> <tr> <td style="text-align: center;">NIC</td> <td style="text-align: center;">100</td> <td style="text-align: center;">10.12</td> </tr> </tbody> </table>");
       } 
       else if (val == "fgsm2") {
         $("#tables").html("");
@@ -242,58 +297,6 @@ We are welcoming your contribution to enrich this benchmark either by adding new
   });
 </script>
 
-
-<table id='mnist' class='sortable' border='1'>
-  <tbody>
-    <tr>
-      <th style="text-align: center;">Detector</th>
-      <th style="text-align: center;">Model 1 &ndash; DR</th>
-      <th style="text-align: center;">Model 1 &ndash; FPR</th>
-    </tr>
-    <tr>
-      <td style="text-align: center;">KD+BU</td>
-      <td style="text-align: center;">85.54</td>
-      <td style="text-align: center;">3.46</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">LID</td>
-      <td style="text-align: center;">81.66</td>
-      <td style="text-align: center;">1.41</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">NSS</td>
-      <td style="text-align: center;">100</td>
-      <td style="text-align: center;">0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">FS</td>
-      <td style="text-align: center;">97.8</td>
-      <td style="text-align: center;">5.27</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">MagNet</td>
-      <td style="text-align: center;">100</td>
-      <td style="text-align: center;">0.2</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">DNR</td>
-      <td style="text-align: center;">59.28</td>
-      <td style="text-align: center;">10.01</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">SFAD</td>
-      <td style="text-align: center;">97.76</td>
-      <td style="text-align: center;">10.79</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">NIC</td>
-      <td style="text-align: center;">100</td>
-      <td style="text-align: center;">10.12</td>
-    </tr>
-  </tbody>
-</table>
-
-
 <script>
   $(document).ready(function(){
       $('#mnist').after('<div id="nav"></div>');
@@ -314,6 +317,81 @@ We are welcoming your contribution to enrich this benchmark either by adding new
           var startItem = currPage * rowsShown;
           var endItem = startItem + rowsShown;
           $('#mnist tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+          css('display','table-row').animate({opacity:1}, 300);
+      });
+  });                           
+</script>
+  
+<script>
+  $(document).ready(function(){
+      $('#cifar10').after('<div id="nav"></div>');
+      var rowsShown = 5;
+      var rowsTotal = $('#mnist tbody tr').length;
+      var numPages = rowsTotal/rowsShown;
+      for(i = 0;i < numPages;i++) {
+          var pageNum = i + 1;
+          $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
+      }
+      $('#cifar10 tbody tr').hide();
+      $('#cifar10 tbody tr').slice(0, rowsShown).show();
+      $('#nav a:first').addClass('active');
+      $('#nav a').bind('click', function(){
+          $('#nav a').removeClass('active');
+          $(this).addClass('active');
+          var currPage = $(this).attr('rel');
+          var startItem = currPage * rowsShown;
+          var endItem = startItem + rowsShown;
+          $('#cifar10 tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+          css('display','table-row').animate({opacity:1}, 300);
+      });
+  });                           
+</script>
+  
+<script>
+  $(document).ready(function(){
+      $('#svhn').after('<div id="nav"></div>');
+      var rowsShown = 5;
+      var rowsTotal = $('#mnist tbody tr').length;
+      var numPages = rowsTotal/rowsShown;
+      for(i = 0;i < numPages;i++) {
+          var pageNum = i + 1;
+          $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
+      }
+      $('#svhn tbody tr').hide();
+      $('#svhn tbody tr').slice(0, rowsShown).show();
+      $('#nav a:first').addClass('active');
+      $('#nav a').bind('click', function(){
+          $('#nav a').removeClass('active');
+          $(this).addClass('active');
+          var currPage = $(this).attr('rel');
+          var startItem = currPage * rowsShown;
+          var endItem = startItem + rowsShown;
+          $('#svhn tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+          css('display','table-row').animate({opacity:1}, 300);
+      });
+  });                           
+</script>
+
+<script>
+  $(document).ready(function(){
+      $('#tiny').after('<div id="nav"></div>');
+      var rowsShown = 5;
+      var rowsTotal = $('#mnist tbody tr').length;
+      var numPages = rowsTotal/rowsShown;
+      for(i = 0;i < numPages;i++) {
+          var pageNum = i + 1;
+          $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
+      }
+      $('#tiny tbody tr').hide();
+      $('#tiny tbody tr').slice(0, rowsShown).show();
+      $('#nav a:first').addClass('active');
+      $('#nav a').bind('click', function(){
+          $('#nav a').removeClass('active');
+          $(this).addClass('active');
+          var currPage = $(this).attr('rel');
+          var startItem = currPage * rowsShown;
+          var endItem = startItem + rowsShown;
+          $('#tiny tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
           css('display','table-row').animate({opacity:1}, 300);
       });
   });                           
