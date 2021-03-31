@@ -152,7 +152,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
         $("#tables").html(" <table border="0">
                                 <tbody>
                                   <tr>
-                                    <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                    <td><strong>1 Scenario (Zero Knowledge of the detector)</strong></td>
                                     <td><strong>Attack</strong></td>
                                   </tr>
                                   <tr>
@@ -187,7 +187,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
         $("#tables").html(" <table border="0">
                                 <tbody>
                                   <tr>
-                                    <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                    <td><strong>2 Scenario (Zero Knowledge of the detector)</strong></td>
                                     <td><strong>Attack</strong></td>
                                   </tr>
                                   <tr>
@@ -222,7 +222,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
         $("#tables").html(" <table border="0">
                               <tbody>
                                 <tr>
-                                  <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
+                                  <td><strong>3 Scenario (Zero Knowledge of the detector)</strong></td>
                                   <td><strong>Attack</strong></td>
                                 </tr>
                                 <tr>
