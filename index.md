@@ -185,6 +185,56 @@ We are welcoming your contribution to enrich this benchmark either by adding new
   </tbody>
 </table>
 
+<p><strong>CIFAR-10</strong></p>
+<table id='cifar10' class='sortable' border='0'>
+  <tbody>
+    <tr>
+      <th style="text-align: center;">Detector</th>
+      <th style="text-align: center;">Model 1 &ndash; DR</th>
+      <th style="text-align: center;">Model 1 &ndash; FPR</th>
+    </tr>
+    <tr>
+      <td style="text-align: center;">KD+BU</td>
+      <td style="text-align: center;">85.54</td>
+      <td style="text-align: center;">3.46</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">LID</td>
+      <td style="text-align: center;">81.66</td>
+      <td style="text-align: center;">1.41</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">NSS</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">FS</td>
+      <td style="text-align: center;">97.8</td>
+      <td style="text-align: center;">5.27</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">MagNet</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">0.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">DNR</td>
+      <td style="text-align: center;">59.28</td>
+      <td style="text-align: center;">10.01</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">SFAD</td>
+      <td style="text-align: center;">97.76</td>
+      <td style="text-align: center;">10.79</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">NIC</td>
+      <td style="text-align: center;">100</td>
+      <td style="text-align: center;">10.12</td>
+    </tr>
+  </tbody>
+</table>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
