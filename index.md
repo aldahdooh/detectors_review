@@ -141,7 +141,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
     $("#attacks-select").change(function() {
       var val = $(this).val();
       if (val == "fgsm1") {
-        $("#tables").html("<p><strong>MNIST</strong></p>");
+        $("#tables").html("<p><strong>MNIST</strong></p><table id='' class='display compact' style='width:100%'> <thead> <tr> <th rowspan='2'>Detector</th> <th colspan='2'>Model 1</th> </tr> <tr> <th>DR</th> <th>FPR</th> </tr> </thead> <tr> <td>KD+BU</td> <td>85.54</td> <td>3.46</td> </tr> <tbody> </tbody> </table> <p><strong>CIFAR</strong></p> <table id='' class='display compact' style='width:100%'> <thead> <tr> <th rowspan='2'>Detector</th> <th colspan='2'>Model 1</th> </tr> <tr> <th>DR</th> <th>FPR</th> </tr> </thead> <tbody> <tr> <td>KD+BU</td> <td>85.54</td> <td>3.46</td> </tr> </tbody> </table> <p><strong>SVHN</strong></p> <table id='' class='display compact' style='width:100%'> <thead> <tr> <th rowspan='2'>Detector</th> <th colspan='2'>Model 1</th> </tr> <tr> <th>DR</th> <th>FPR</th> </tr> </thead> <tbody> <tr> <td>KD+BU</td> <td>85.54</td> <td>3.46</td> </tr> </tbody> </table> <p><strong>Tiny-ImageNet</strong></p> <table id='' class='display compact' style='width:100%'> <thead> <tr> <th rowspan='2'>Detector</th> <th colspan='2'>Model 1</th> </tr> <tr> <th>DR</th <th>FPR</th> </tr> </thead> <tbody>   </tbody> <tr> <td>KD+BU</td> <td>85.54</td> <td>3.46</td> </tr> </table>");
       } 
       else if (val == "fgsm2") {
         $("#tables").html("");
