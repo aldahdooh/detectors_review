@@ -196,27 +196,35 @@ We are welcoming your contribution to enrich this benchmark either by adding new
   <tbody>
     <tr>
       <td><strong>MNIST</strong></td>
-      <td>Model 1<sup>*</sup>
+      <td><ul>
+            <li>Model 1<sup>**</sup></li>
+         </ul> 
       </td>
     </tr>
     <tr>
       <td><strong>CIFAR-10</strong></td>
-       <td>Model 1<sup>*</sup>
+       <td><ul>
+            <li>Model 1<sup>**</sup></li>
+         </ul> 
       </td>
     </tr>
     <tr>
       <td><strong>SVHN</strong></td>
-      <td>Model 1<sup>*</sup>
+      <td><ul>
+            <li>Model 1<sup>**</sup></li>
+         </ul> 
       </td>
     </tr>
     <tr>
       <td><strong>Tiny-ImageNet </strong></td>
-      <td>Model 1<sup>*</sup></td>
+      <td><ul>
+            <li>Model 1<sup>**</sup></li>
+         </ul>
     </tr>
   </tbody>
 </table>
 
-*Models Description 
+_**Models Description**_
 <table>
 <tbody>
 <tr>
