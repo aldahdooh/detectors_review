@@ -190,7 +190,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
   <thead>
       <tr>
       <td><strong>Dataset</strong></td>
-      <td><strong>Neural Network Model</strong></td>
+      <td><strong>Neural Network Model(s)</strong></td>
     </tr>
   </thead>
   <tbody>
