@@ -255,15 +255,12 @@ _**Models Description_
 
 ### Attacks
 <table>
-<thead>
+<tbody>
 <tr>
 <td>Scenario</td>
 <td>Attack</td>
 <td>Parameters</td>
 </tr>
-</thead>
-<tbody>
-<tr>
 <tr>
 <td rowspan="8">White-box</td>
 <td >FGSM</td>
