@@ -189,8 +189,8 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 <table border="0">
   <thead>
       <tr>
-      <td><strong>Dataset</strong></td>
-      <td><strong>Neural Network Model(s)</strong></td>
+      <th><strong>Dataset</strong></th>
+      <th><strong>Neural Network Model(s)</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -230,8 +230,8 @@ _**Models Description_
 <table>
 <thead>
 <tr>
-<td>Model Name</td>
-<td>Description</td>
+<th>Model Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -259,9 +259,9 @@ _**Models Description_
 <table>
 <thead>
 <tr>
-<td>Scenario</td>
-<td>Attack</td>
-<td>Parameters</td>
+<th>Scenario</th>
+<th>Attack</th>
+<th>Parameters</th>
 </tr>
 </thead>
 <tbody>
