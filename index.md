@@ -220,11 +220,37 @@ We are welcoming your contribution to enrich this benchmark either by adding new
       <td><ul>
             <li>Model 1<sup>**</sup></li>
          </ul>
+      </td>
     </tr>
   </tbody>
 </table>
 
 
+_**Models Description_
+<table>
+<tbody>
+<tr>
+<td>Model Name</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>MNIST - Model 1 (98.73)</td>
+<td>2 (CONV(32, 3x3)+ReLU) + MaxPool,<br/>2 (CONV(64, 3x3)+ReLU) + MaxPool,<br/>Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,<br/>Dense(10) + Softmax</td>
+</tr>
+<tr>
+<td>CIFAR-10 - Model 1 (89.11)</td>
+<td>2(Conv(64, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.1),<br/>2(Conv(128, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.2),<br/>2(Conv(256, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.3),<br/>Conv(512, 3x3) + BatchNorm + ReLU + MaxPool + Dropout(0.4),<br/>Dense (512) ,<br/>Dense(10) + Softmax</td>
+</tr>
+<tr>
+<td>SVHN - Model 1 (94.98)</td>
+<td>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,<br/>Dense (512) + ReLU + Dropout (0.3), Dense (128) + ReLU,<br/>Dense(10) + Softmax</td>
+</tr>
+<tr>
+<td>Tiny-ImageNet - Model 1 (64.48)</td>
+<td>DenseNet201</td>
+</tr>
+</tbody>
+</table>
 
 
 ### Attacks
