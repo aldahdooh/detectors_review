@@ -228,11 +228,13 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 
 _**Models Description_
 <table>
-<tbody>
+<thead>
 <tr>
 <td>Model Name</td>
 <td>Description</td>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>MNIST - Model 1 (98.73)</td>
 <td>2 (CONV(32, 3x3)+ReLU) + MaxPool,<br/>2 (CONV(64, 3x3)+ReLU) + MaxPool,<br/>Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,<br/>Dense(10) + Softmax</td>
@@ -255,12 +257,14 @@ _**Models Description_
 
 ### Attacks
 <table>
-<tbody>
+<thead>
 <tr>
 <td>Scenario</td>
 <td>Attack</td>
 <td>Parameters</td>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td rowspan="8">White-box</td>
 <td >FGSM</td>
