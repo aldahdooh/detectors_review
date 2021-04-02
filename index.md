@@ -168,13 +168,19 @@ The aim of this benchmark is to have a framework that is able to test the perfor
   });
 </script>
 
-
+<br>
+<hr>
 
 ### Citation
 ```
 ```
 
 ### Authors
+- [Ahmed Aldahdooh](https://scholar.google.com/citations?user=7BLBJC0AAAAJ&hl=en) <p><img src="https://aldahdooh.github.io/detectors_review/imgs/email.png" width="16" height="16"></p>
+- [Wassim Hamidouche](https://scholar.google.fr/citations?user=ywBnUIAAAAAJ&hl=en)
+- [Olivier Deforges](https://scholar.google.fr/citations?user=c5DiiBUAAAAJ&hl=en)
+
+
 <p align="center">
   <table>
       <tr>
