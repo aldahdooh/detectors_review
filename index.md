@@ -254,19 +254,98 @@ _**Models Description_
 
 
 ### Attacks
-<table border="0">
-  <tbody>
-    <tr>
-      <td><strong>Scenario (Zero Knowledge of the detector)</strong></td>
-      <td><strong>Attack</strong></td>
-    </tr>
-    <tr>
-      <td><strong>White-box</strong></td>
-      <td>FGSM, BIM, PGD-L1, PGD-L2, PGD-Linf, CWinf, CW-HCA, DeepFool</td>
-    </tr>
-    <tr>
-      <td><strong>Black-box</strong></td>
-      <td>Square attack, SkipHopJump, Spatial Transformation attack, Zoo</td>
-    </tr>
-  </tbody>
+<table>
+<thead>
+<tr>
+<td>Scenario</td>
+<td>Attack</td>
+<td>Parameters</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<tr>
+<td rowspan="8">White-box</td>
+<td >FGSM</td>
+<td >eps = (8, 16, 32, 64, 80, 128)/255<br/>
+  eps_step = 0.01
+</td>
+</tr>
+<tr>
+<td>BIM</td>
+<td>eps = (8, 16, 32, 64, 80, 128)/255<br/>
+eps_step = 0.01<br/>
+iter = eps*255*1.25
+</td>
+</tr>
+<tr>
+<td>PGD-L1</td>
+<td>eps = 5, 10, 15, 20, 25<br/>
+eps_step = 4<br/>
+iter = 100
+</td>
+</tr>
+<tr>
+<td>PGD-L2</td>
+<td>eps = 0.25, 0.3125, 0.5, 1, 1.5, 2<br/>
+eps_step = 0.01<br/>
+iter = eps*255*1.25
+</td>
+</tr>
+<tr>
+<td>PGD-Linf</td>
+<td>eps = (8, 16, 32, 64, 80, 128)/255<br/>
+eps_step = 0.01<br/>
+iter = 100
+</td>
+</tr>
+<tr>
+<td>CW</td>
+<td>Confidence = 0<br/>
+iter=200
+</td>
+</tr>
+<tr>
+<td>CW-HCA</td>
+<td>eps = (8, 16, 32, 64, 80, 128)/255<br/>
+tol = 1<br/>
+num_steps = 100<br/>
+step_size = 1/255<br/>
+random_start = False
+</td>
+</tr>
+<tr>
+<td>DF</td>
+<td>eps = 1e-6<br/>
+iter = 100
+</td>
+</tr>
+<tr>
+<td rowspan="4">Black-box</td>
+<td>Square Attack</td>
+<td>eps = 0.3 (mnist), 0.125 (cifar, svhn, tiny)<br/>
+iter = 200
+</td>
+</tr>
+<tr>
+<td>HopSkipJump</td>
+<td>max_eval = 100<br/>
+init_eval = 10<br/>
+iter = 40
+</td>
+</tr>
+<tr>
+<td>Spatial Transformation</td>
+<td>rotation = 60 (mnist, svhn), 30 (cifar, tiny)<br/>
+translation = 10 (mnist, svhn),&nbsp; 8 (cifar, tiny)
+</td>
+</tr>
+<tr>
+<td>ZOO</td>
+<td>confidence=0.1<br/>
+learning_rate=0.01<br/>
+max_iter=100
+</td>
+</tr>
+</tbody>
 </table>
