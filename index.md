@@ -171,73 +171,75 @@ The aim of this benchmark is to have a framework that is able to test the perfor
 <br>
 <hr>
 
+# About
 ### Citation
 ```
 ```
 
 ### Authors
-- [Ahmed Aldahdooh](https://scholar.google.com/citations?user=7BLBJC0AAAAJ&hl=en) [<img src="https://aldahdooh.github.io/detectors_review/imgs/email.png" width="16" height="16" />](mailto:ahmed.aldahdooh@insa-rennes.fr)
-- [Wassim Hamidouche](https://scholar.google.fr/citations?user=ywBnUIAAAAAJ&hl=en)
-- [Olivier Deforges](https://scholar.google.fr/citations?user=c5DiiBUAAAAJ&hl=en)
-
-
-<p align="center">
-  <table>
-      <tr>
-        <td>Ahmed Aldahdooh</td>
-        <td>Wassim Hamidouche</td>
-        <td>Olivier Deforges</td>
-      </tr>
-      <tr>
-        <td colspan="3">Univ Rennes, INSA Rennes, CNRS, IETR - UMR 6164, F-35000 Rennes, France</td>
-      </tr>
-      <tr>
-        <td colspan="3"><a href = "mailto:ahmed.aldahdooh@insa-rennes.fr">ahmed.aldahdooh@insa-rennes.fr</a></td>
-      </tr>
-  </table>
-</p>
-
+- [Ahmed Aldahdooh](https://scholar.google.com/citations?user=7BLBJC0AAAAJ&hl=en) [<img src="https://aldahdooh.github.io/detectors_review/imgs/email.png" width="12" height="12" />](mailto:ahmed.aldahdooh@insa-rennes.fr)
+- [Wassim Hamidouche](https://scholar.google.fr/citations?user=ywBnUIAAAAAJ&hl=en) [<img src="https://aldahdooh.github.io/detectors_review/imgs/email.png" width="12" height="12" />](mailto:Wassim.Hamidouche@insa-rennes.fr)
+- [Olivier Deforges](https://scholar.google.fr/citations?user=c5DiiBUAAAAJ&hl=en) [<img src="https://aldahdooh.github.io/detectors_review/imgs/email.png" width="12" height="12" />](mailto:Olivier.Deforges@insa-rennes.fr)
 
 ### Your contribution
 We are welcoming your contribution to enrich this benchmark either by adding new detectors' performance evaluation or by including current detectors' performance with more attacks and with different baseline classifiers. Please 1)Follow the instruction [here](https://github.com/aldahdooh/detectors_review#steps-to-add-new-detector-method) 2)Contact us by opening an isuue to include your updates to the code and to the results. 
 
+# Datasets and Attacks
 ### Datasets
 <table border="0">
-  <tbody>
-    <tr>
+  <thead>
+      <tr>
       <td><strong>Dataset</strong></td>
       <td><strong>CNN Model</strong></td>
     </tr>
+  </thead>
+  <tbody>
     <tr>
-      <td><strong>MNIST(98.73)</strong></td>
-      <td>2 (CONV(32, 3x3)+ReLU) + MaxPool,<br>
-          2 (CONV(64, 3x3)+ReLU) + MaxPool,<br>
-          Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,<br>
-          Dense(10) + Softmax
+      <td><strong>MNIST</strong></td>
+      <td>Model 1<sup>*</sup>
       </td>
     </tr>
     <tr>
-      <td><strong>CIFAR-10 (89.11)</strong></td>
-       <td>2(Conv(64, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.1),<br>
-         2(Conv(128, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.2),<br>
-         2(Conv(256, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.3),<br>
-         Conv(512, 3x3) + BatchNorm + ReLU + MaxPool + Dropout(0.4),<br>
-         Dense (512) ,<br>
-         Dense(10) + Softmax
+      <td><strong>CIFAR-10</strong></td>
+       <td>Model 1<sup>*</sup>
       </td>
     </tr>
     <tr>
-      <td><strong>SVHN (94.98)</strong></td>
-      <td>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,<br>
-        Dense (512) + ReLU + Dropout (0.3), Dense (128) + ReLU,<br>
-        Dense(10) + Softmax
+      <td><strong>SVHN</strong></td>
+      <td>Model 1<sup>*</sup>
       </td>
     </tr>
     <tr>
-      <td><strong>Tiny-ImageNet (64.48)</strong></td>
-      <td>DenseNet201</td>
+      <td><strong>Tiny-ImageNet </strong></td>
+      <td>Model 1<sup>*</sup></td>
     </tr>
   </tbody>
+</table>
+
+*Models Description 
+<table>
+<tbody>
+<tr>
+<td>Model Name</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>MNIST - Model 1 (98.73)</td>
+<td>2 (CONV(32, 3x3)+ReLU) + MaxPool,<br/>2 (CONV(64, 3x3)+ReLU) + MaxPool,<br/>Dense (256) + ReLU + Dropout (0.3), Dense (256) + ReLU,<br/>Dense(10) + Softmax</td>
+</tr>
+<tr>
+<td>CIFAR-10 - Model 1 (89.11)</td>
+<td>2(Conv(64, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.1),<br/>2(Conv(128, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.2),<br/>2(Conv(256, 3x3) + BatchNorm + ReLU) + MaxPool + Dropout(0.3),<br/>Conv(512, 3x3) + BatchNorm + ReLU + MaxPool + Dropout(0.4),<br/>Dense (512) ,<br/>Dense(10) + Softmax</td>
+</tr>
+<tr>
+<td>SVHN - Model 1 (94.98)</td>
+<td>2 (CONV(32, 3x3)+ReLU)+MaxPool, 2 (CONV(64, 3x3)+ReLU)+MaxPool,<br/>Dense (512) + ReLU + Dropout (0.3), Dense (128) + ReLU,<br/>Dense(10) + Softmax</td>
+</tr>
+<tr>
+<td>Tiny-ImageNet - Model 1 (64.48)</td>
+<td>DenseNet201</td>
+</tr>
+</tbody>
 </table>
 
 
@@ -258,7 +260,3 @@ We are welcoming your contribution to enrich this benchmark either by adding new
     </tr>
   </tbody>
 </table>
-
-### Related Paper(s)
-[Preprint](X)
-
