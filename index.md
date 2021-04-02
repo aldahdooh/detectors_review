@@ -95,7 +95,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
 <label for="attacks-select">Select an attack:</label>
 <select name="attacks" id="attacks-select">
     <option value="item0">--- Please select an attack ---</option>
-    <option value="item1"><strong>*****White-box Attacks*****</strong></option>
+    <option value="item1" disabled="disabled">******White-box Attacks******</option>
     <option value="fgsm1">FGSM(8)</option>
     <option value="fgsm2">FGSM(16)</option>
     <option value="fgsm3">FGSM(32)</option>
@@ -127,7 +127,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
     <option value="hca3">CW-HCA(80)</option>
     <option value="hca4">CW-HCA(128)</option>
     <option value="df">DeepFool</option>
-    <option value="item2"><strong>*****Black-box Attacks*****</strong></option>
+    <option value="item2" disabled="disabled">******Black-box Attacks******</option>
     <option value="sa">SquareAttack</option>
     <option value="hop">HopSkipJumpAttack</option>
     <option value="sta">SpatialTransformationAttack</option>
