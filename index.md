@@ -224,7 +224,7 @@ We are welcoming your contribution to enrich this benchmark either by adding new
   </tbody>
 </table>
 
-_**Models Description**_
+_**Models Description_
 <table>
 <tbody>
 <tr>
