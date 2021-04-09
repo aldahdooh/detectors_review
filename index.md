@@ -662,7 +662,7 @@ max_iter=100
 The project is funded by both Region Bretagne (Brittany region), France, and direction generale de l’armement (DGA).
 <center>
     <p>
-        <img src="https://aldahdooh.github.io/detectors_review/imgs/rb.png" width="50" height="50">                 <img src="https://aldahdooh.github.io/detectors_review/imgs/dga.jpg" width="50" height="50">
+        <img src="https://aldahdooh.github.io/detectors_review/imgs/rb.png" width="50" height="50">&emsp;&emsp;&emsp;&emsp;<img src="https://aldahdooh.github.io/detectors_review/imgs/dga.jpg" width="50" height="50">
     </p>
 </center>
 
