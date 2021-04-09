@@ -8,7 +8,7 @@ The aim of this benchmark is to have a framework that is able to test the perfor
 
 <center>
     <a href="https://aldahdooh.github.io/detectors_review/imgs/bench_sum.png" target="_blank">
-        <img src="https://aldahdooh.github.io/detectors_review/imgs/bench_sum.png" width="500" height="350">
+        <img src="https://aldahdooh.github.io/detectors_review/imgs/bench_sum.png" width="500" height="300">
     </a>
 </center>
 
