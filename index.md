@@ -10,7 +10,7 @@ The aim of this benchmark is to have a framework that is able to test the perfor
     <a href="https://aldahdooh.github.io/detectors_review/imgs/bench_sum.png" target="_blank">
         <figure>
             <img src="https://aldahdooh.github.io/detectors_review/imgs/bench_sum.png" width="500" height="300">
-            <figcaption>Fig.1 - Average detection rates (%) for detectors against adversarial examples for each dataset</figcaption>
+            <figcaption><p>Fig.1 - Average detection rates (%) for detectors against adversarial examples for each dataset</p></figcaption>
         </figure>
     </a>
 </center>
