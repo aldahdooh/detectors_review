@@ -56,7 +56,7 @@ The aim of this benchmark is to have a framework that is able to test the perfor
 </select>
 
 <blockquote>
-<p><span style="color: #0000ff;"><em><strong>Note:</strong></em> In this website, we only report the detection rate (DR) and the false positive rate (FPR). Other performance results, like TP, TN, FP, and FN can be accquired from the genenerated CSV file for each detector (visit the gitub repository).</span></p>
+<p><span style="color: #0000ff;"><em><strong>Note:</strong></em> In this website, we only report the detection rate (DR) and the false positive rate (FPR). Other performance results, like TP, TN, FP, and FN, can be accquired from the genenerated CSV file for each detector (visit the gitub repository).</span></p>
 </blockquote>
 
 <div id="tables">
