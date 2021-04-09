@@ -6,6 +6,8 @@
 # The benchmark
 The aim of this benchmark is to have a framework that is able to test the performance of the adversarial examples detection methods under the same attack scenarios. This will help researchers to follow-up the up-to-date progress on the domain. Here, we start with the results published in the review paper; "Adversarial Example Detection for DNN Models: A Review" ([Link](X)). 
 
+[<img src="https://aldahdooh.github.io/detectors_review/imgs/bench_sum.png" width="100" height="100" />](https://aldahdooh.github.io/detectors_review/imgs/bench_sum.png)
+
 
 # Results
 
