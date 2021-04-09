@@ -264,6 +264,8 @@ _**Models Description_
 <tr>
 <th>Scenario</th>
 <th>Attack</th>
+<th>Norm</th>
+<th>(Un)Targeted</th>
 <th>Parameters</th>
 </tr>
 </thead>
@@ -271,33 +273,43 @@ _**Models Description_
 <tr>
 <td rowspan="8">White-box</td>
 <td >FGSM</td>
+<td>L-inf</td>
+<td>U</td>
 <td >eps = (8, 16, 32, 64, 80, 128)/255<br/>
   eps_step = 0.01
 </td>
 </tr>
 <tr>
 <td>BIM</td>
+<td>L-inf</td>
+<td>U</td>
 <td>eps = (8, 16, 32, 64, 80, 128)/255<br/>
 eps_step = 0.01<br/>
 iter = eps*255*1.25
 </td>
 </tr>
 <tr>
-<td>PGD-L1</td>
+<td>PGD</td>
+<td>L-1</td>
+<td>U</td>
 <td>eps = 5, 10, 15, 20, 25<br/>
 eps_step = 4<br/>
 iter = 100
 </td>
 </tr>
 <tr>
-<td>PGD-L2</td>
+<td>PGD</td>
+<td>L-2</td>
+<td>U</td>
 <td>eps = 0.25, 0.3125, 0.5, 1, 1.5, 2<br/>
 eps_step = 0.01<br/>
 iter = eps*255*1.25
 </td>
 </tr>
 <tr>
-<td>PGD-Linf</td>
+<td>PGD</td>
+<td>L-inf</td>
+<td>U</td>
 <td>eps = (8, 16, 32, 64, 80, 128)/255<br/>
 eps_step = 0.01<br/>
 iter = 100
@@ -305,12 +317,16 @@ iter = 100
 </tr>
 <tr>
 <td>CW</td>
+<td>L-inf</td>
+<td>U</td>
 <td>Confidence = 0<br/>
 iter=200
 </td>
 </tr>
 <tr>
 <td>CW-HCA</td>
+<td>L-2</td>
+<td>U</td>
 <td>eps = (8, 16, 32, 64, 80, 128)/255<br/>
 tol = 1<br/>
 num_steps = 100<br/>
@@ -320,6 +336,8 @@ random_start = False
 </tr>
 <tr>
 <td>DF</td>
+<td>L-2</td>
+<td>U</td>
 <td>eps = 1e-6<br/>
 iter = 100
 </td>
@@ -327,12 +345,16 @@ iter = 100
 <tr>
 <td rowspan="4">Black-box</td>
 <td>Square Attack</td>
+<td>L-inf</td>
+<td>U</td>
 <td>eps = 0.3 (mnist), 0.125 (cifar, svhn, tiny)<br/>
 iter = 200
 </td>
 </tr>
 <tr>
 <td>HopSkipJump</td>
+<td>L-2</td>
+<td>U</td>
 <td>max_eval = 100<br/>
 init_eval = 10<br/>
 iter = 40
@@ -340,12 +362,16 @@ iter = 40
 </tr>
 <tr>
 <td>Spatial Transformation</td>
+<td>-</td>
+<td>U</td>
 <td>rotation = 60 (mnist, svhn), 30 (cifar, tiny)<br/>
 translation = 10 (mnist, svhn),&nbsp; 8 (cifar, tiny)
 </td>
 </tr>
 <tr>
 <td>ZOO</td>
+<td>L-2</td>
+<td>U</td>
 <td>confidence=0.1<br/>
 learning_rate=0.01<br/>
 max_iter=100
