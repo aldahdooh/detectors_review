@@ -7,7 +7,7 @@
 The aim of this benchmark is to have a framework that is able to test the performance of the adversarial examples detection methods under the same attack scenarios. This will help researchers to follow-up the up-to-date progress on the domain. Here, we start with the results published in the review paper; "Adversarial Example Detection for DNN Models: A Review" ([Link](X)). 
 
 <center>
-    <a href="https://aldahdooh.github.io/detectors_review/imgs/bench_sum.png" target="_blank">
+    <a href="https://aldahdooh.github.io/detectors_review/imgs/all_sumary.png" target="_blank">
         <figure>
             <img src="https://aldahdooh.github.io/detectors_review/imgs/all_sumary.png" width="500" height="300">
             <figcaption><p>Fig.1 - Average detection rates (%) for detectors against adversarial examples for each dataset</p></figcaption>
