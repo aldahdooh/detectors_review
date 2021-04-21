@@ -176,7 +176,7 @@ The aim of this benchmark is to have a framework that is able to test the perfor
       }
       $(document).ready(function() {
         $('table.display').DataTable({
-          "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
+          "lengthMenu": [[10, 15, 25, 50, -1], [10, 115, 25, 50, "All"]]
           });
         });
     });
