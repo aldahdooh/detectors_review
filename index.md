@@ -189,6 +189,14 @@ The aim of this benchmark is to have a framework that is able to test the perfor
 # About
 ### Citation
 ```
+@misc{aldahdooh2021adversarial,
+      title={Adversarial Example Detection for DNN Models: A Review}, 
+      author={Ahmed Aldahdooh and Wassim Hamidouche and Sid Ahmed Fezza and Olivier Deforges},
+      year={2021},
+      eprint={2105.00203},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ### Authors
