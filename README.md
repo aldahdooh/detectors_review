@@ -6,7 +6,7 @@ Publicly available codes for the detectors that are use in this work are customi
 
  1. [KD_BU](https://github.com/rfeinman/detecting-adversarial-samples)
  2. [LID](https://github.com/xingjunm/lid_adversarial_subspace_detection)
- 3. [NSS](https://ieeexplore.ieee.org/document/9287056)
+ 3. [NSS](https://hal.archives-ouvertes.fr/hal-03003468)
  4. [FS](https://github.com/mzweilin/EvadeML-Zoo)
  5. [MagNet](https://github.com/Trevillie/MagNet)
  6. [DNR](https://arxiv.org/abs/1910.00470)
