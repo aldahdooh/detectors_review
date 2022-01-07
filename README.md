@@ -1,6 +1,17 @@
 # Adversarial detection framework
 This repository is the implementation of the paper **`Adversarial Example Detection for DNN Models: A Review and Experimental Comparison`** 
 
+## Citation
+```
+@article{aldahdooh2022adversarial,
+      title={Adversarial Example Detection for DNN Models: A Review and Experimental Comparison}, 
+      author={Ahmed Aldahdooh and Wassim Hamidouche and Sid Ahmed Fezza and Olivier Deforges},
+      journal={Artificial Intelligence Review},
+      year={2022},
+      publisher={Springer}
+}
+```
+
 ### Note
 Publicly available codes for the detectors that are use in this work are customized and the original repositories/papers can be found in:
 
