@@ -56,15 +56,3 @@ Create a folder for your detector and put inside it your code and utils code.
 Create a Python file `detect_<detector_name>.py` to run the detector for a specific *dataset*. We recommend to follow the code style we follow in the other detectors files. **DON'T** forget to add lines to generate the *csv* file for the result as we did in the `detect_<detector_name>.py`.
 ### Step-3
 Add detector-related arguments in `setup_paths.py`.
-
-## Citation
-```
-@article{aldahdooh2022adversarial,
-      title={Adversarial Example Detection for DNN Models: A Review and Experimental Comparison}, 
-      author={Ahmed Aldahdooh and Wassim Hamidouche and Sid Ahmed Fezza and Olivier Deforges},
-      journal={Artificial Intelligence Review},
-      year={2022},
-      publisher={Springer}
-}
-```
-
