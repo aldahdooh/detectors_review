@@ -4,7 +4,7 @@
 
 
 # The benchmark
-The aim of this benchmark is to have a framework that is able to test the performance of the adversarial examples detection methods under the same attack scenarios. This will help researchers to follow-up the up-to-date progress on the domain. Here, we start with the results published in the review paper; **[Adversarial Example Detection for DNN Models: A Review](https://arxiv.org/abs/2105.00203)**. 
+The aim of this benchmark is to have a framework that is able to test the performance of the adversarial examples detection methods under the same attack scenarios. This will help researchers to follow-up the up-to-date progress on the domain. Here, we start with the results published in the review paper; **[Adversarial Example Detection for DNN Models: A Review and Experimental Comparison](https://link.springer.com/article/10.1007/s10462-021-10125-w)**. 
 
 <center>
     <a href="https://aldahdooh.github.io/detectors_review/imgs/all_sumary.png" target="_blank">
@@ -189,13 +189,12 @@ The aim of this benchmark is to have a framework that is able to test the perfor
 # About
 ### Citation
 ```
-@misc{aldahdooh2021adversarial,
-      title={Adversarial Example Detection for DNN Models: A Review}, 
+@article{aldahdooh2022adversarial,
+      title={Adversarial Example Detection for DNN Models: A Review and Experimental Comparison}, 
       author={Ahmed Aldahdooh and Wassim Hamidouche and Sid Ahmed Fezza and Olivier Deforges},
-      year={2021},
-      eprint={2105.00203},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      journal={Artificial Intelligence Review},
+      year={2022},
+      publisher={Springer}
 }
 ```
 
